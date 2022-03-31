@@ -46,6 +46,16 @@ app.get('/list', (req, res) => {
   );
 });
 
+app.get('/borrow', (req, res) => {
+  connection.query(
+    'SELECT * FROM users',
+    (error, results) => {
+      res.render('borrow.ejs', { users: results });
+    }
+  );
+});
+
+
 app.get('/article/:id', (req, res) => {
   const id = req.params.id;
   connection.query(

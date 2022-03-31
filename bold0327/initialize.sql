@@ -69,7 +69,7 @@ CREATE TABLE users (
   password varchar(60) DEFAULT NULL,
   PRIMARY KEY (id)
 );
-INSERT INTO users (username, email, password) VALUES ('にんじゃわんこ','wanko@prog-8.com','ninja');
-INSERT INTO users (username, email, password) VALUES ('ひつじ仙人','hitsuji@prog-8.com','sennin');
-INSERT INTO users (username, email, password) VALUES ('ベイビーわんこ','baby@prog-8.com','baby');
-INSERT INTO users (username, email, password) VALUES ('とりずきん','torizukin@prog-8.com','tori');
+INSERT INTO users (username, email, password) VALUES ('田中','221111','ninja');
+INSERT INTO users (username, email, password) VALUES ('鈴木','221222','sennin');
+INSERT INTO users (username, email, password) VALUES ('佐藤','221333','baby');
+INSERT INTO users (username, email, password) VALUES ('中島','221555','tori');
