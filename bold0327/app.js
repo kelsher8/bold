@@ -55,6 +55,15 @@ app.get('/borrow', (req, res) => {
   );
 });
 
+app.get('/rent', (req, res) => {
+  connection.query(
+    'SELECT * FROM users',
+    (error, results) => {
+      res.render('rent.ejs', { users: results });
+    }
+  );
+});
+
 
 app.get('/article/:id', (req, res) => {
   const id = req.params.id;
