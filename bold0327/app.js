@@ -48,9 +48,9 @@ app.get('/list', (req, res) => {
 
 app.get('/borrow', (req, res) => {
   connection.query(
-    'SELECT * FROM users',
+    'SELECT * FROM items',
     (error, results) => {
-      res.render('borrow.ejs', { users: results });
+      res.render('borrow.ejs', { items: results });
     }
   );
 });

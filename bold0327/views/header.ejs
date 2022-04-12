@@ -1,6 +1,6 @@
 <header>
   <div class="header-nav">
-    <a href="/">BLOG</a>
+    <a href="/">HOME</a>
     <p>ようこそ、<%= locals.username %>さん</p>
     <ul>
       <li><a href="/list">資産一覧</a></li>
@@ -8,9 +8,11 @@
         <li><a href="/logout">ログアウト</a></li>
       <% } else { %>
         <li><a href="/signup">新規登録</a></li>
-        <li><a href="/login">ログイン</a></li>
+        <li><a href="/login">管理者用</a></li>
       <% } %>
     </ul>
   </div>
+  <!--
   <p>固定資産</p>
+  -->
 </header>

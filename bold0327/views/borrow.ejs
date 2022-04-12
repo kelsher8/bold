@@ -2,18 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BLOG</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Asset Management</title>
+    <link rel="stylesheet" href="/css/borrow.css">
     <script src="/send_url.js"></script>
   </head>
   <body>
     <%- include('header'); %>
     <main>
       <ul class="list">
-        <% users.forEach((user) => { %>
+        <% items.forEach((item) => { %>
         <li>
-          <h2><%= user.username %></h2>
-          <p><%= user.email %></p>
+          <a href="/">
+            <h2><%= item.itemname %> </h2>
+            <span><%= item.itemsummary %> </span>
+          </a>
         </li>
         <% }) %>
       </ul>

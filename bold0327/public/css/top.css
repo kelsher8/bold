@@ -6,7 +6,7 @@ h1{
 }
 
 .level1-heading{
-    padding:30px 10px;
+    padding: 26px 10px;
     background-color:#555555;
     color:#fff;
     font-size:1.75rem;
@@ -32,16 +32,13 @@ h1{
 
 
 .top {
-
     display: flex;
     align-items: center; 
     justify-content: center;
-    
 }
 
 
 .card{
-    /*box-shadow:0 3px 6px rgba(0,0,0,.16);*/
     display:flex;
     flex-wrap:wrap;
 }
@@ -74,32 +71,31 @@ h1{
     transition: .25s;
     border: 2px solid;
     border-color:darkgray;
+    background-color: #EEEEEE;
     box-shadow:0 3px 6px rgba(0,0,0,.16);
     width:80%;
 }
 
 .card--link .card__title,
 .card--link .card__text{
-    transition: .25s;
+    transition: .10s;
+}
+
+.card--link{
+    color:royalblue;
 }
 
 .card--link:focus,
 .card--link:hover{
     opacity: .75;
+    color:red;
 }
 
-.card--link:focus, .card__title,
-.card--link:focus, .card__text,
-.card--link:hover, .card__title,
-.card--link:hover, .card__text{
-    color:#e25c00;
-    text-decoration:underline;
-}
+
 
 .card__img-wrapper{
     position:relative;
     padding-top:56.25%;
-    
     overflow:hidden;
     
 }
@@ -124,11 +120,6 @@ h1{
     font-size:2rem; 
     font-weight:bold;
 }
-
-.card__txt{
-    color:#777;
-}
-
 
 
 .top h2 {

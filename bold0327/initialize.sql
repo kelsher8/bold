@@ -73,3 +73,17 @@ INSERT INTO users (username, email, password) VALUES ('田中','221111','ninja')
 INSERT INTO users (username, email, password) VALUES ('鈴木','221222','sennin');
 INSERT INTO users (username, email, password) VALUES ('佐藤','221333','baby');
 INSERT INTO users (username, email, password) VALUES ('中島','221555','tori');
+
+CREATE TABLE items (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  itemname varchar(20) DEFAULT NULL,
+  itemsummary varchar(100) DEFAULT NULL,
+  itemcontent text DEFAULT NULL,
+  category varchar(60) DEFAULT NULL,
+  itemstate boolean not null DEFAULT 1,
+  PRIMARY KEY (id)
+);
+INSERT INTO items (itemname, itemsummary, category) VALUES ('SONY カメラ','モバイル重視','カメラ');
+INSERT INTO items (itemname, itemsummary, category) VALUES ('OLYMPUS カメラ','画質重視','カメラ');
+INSERT INTO items (itemname, itemsummary, category) VALUES ('Lets note','Windows10','ノートPC固定資産');
+INSERT INTO items (itemname, itemsummary, category) VALUES ('dynabook','Windows7','ノートPC固定資産');

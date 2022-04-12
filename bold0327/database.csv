@@ -1,0 +1,5 @@
+id,name,summary,category,コマンド
+1,SONY カメラ,モバイル重視,カメラ,"INSERT INTO items (itemname, itemsummary, category) VALUES ('SONY カメラ', 'モバイル重視', 'カメラ');"
+2,OLYMPUS カメラ,画質重視,カメラ,"INSERT INTO items (itemname, itemsummary, category) VALUES ('OLYMPUS カメラ', '画質重視', 'カメラ');"
+3,Lets note,Windows10,ノートPC固定資産,"INSERT INTO items (itemname, itemsummary, category) VALUES ('Lets note', 'Windows10', 'ノートPC固定資産');"
+4,dynabook,Windows7,ノートPC固定資産,"INSERT INTO items (itemname, itemsummary, category) VALUES ('dynabook', 'Windows7', 'ノートPC固定資産');"
